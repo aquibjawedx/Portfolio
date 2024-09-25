@@ -240,10 +240,9 @@ main {
         padding: 0;
         display: flex;
         justify-content: center;
-        border-bottom: 1px solid #000000;
     }
     #user-image {
-        width: 15rem;
-        height: 15rem;
+        width: 10rem;
+        height: 10rem;
     }
 }
