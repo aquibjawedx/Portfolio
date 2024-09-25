@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aquib Jawed's portfolio. A skilled web developer with expertise in front-end, back-end development, and JavaScript. Proficient in data structures and algorithms. Hire me for your next project!">
+    <meta name="keywords" content="Aquib Jawed, Web Developer, Front-end Developer, Back-end Developer, JavaScript Developer, Full Stack Developer, Data Structures, Algorithms, Hire Developer, Portfolio">
+    <meta name="author" content="Aquib Jawed">
+    <title>Portfolio</title>
+    <link rel="icon" href="/Media/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo-container">Aquib Jawed</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="" class="nav-links">Projects</a></li>
+                <li><a href="" class="nav-links">Skills</a></li>
+                <li><a href="" class="nav-links">About</a></li>
+                <li><a href="" class="nav-links">Contact Me</a></li>
+                <button onclick="showSidebar()" id="menu-btn"><i id="menu" class="ri-menu-fill"></i></button>
+            </ul>
+        </nav>
+        <div id="sidebar">
+            <button onclick="hideSidebar()" id="back-btn"><i class="ri-close-large-fill"></i></button>
+            <ul class="side">
+                <li><a href="index.html" class="side-menu-links">Home</a></li>
+                <li><a href="" class="side-menu-links">Projects</a></li>
+                <li><a href="" class="side-menu-links">Skills</a></li>
+                <li><a href="" class="side-menu-links">About</a></li>
+                <li><a href="" class="side-menu-links">Contact Me</a></li>
+            </ul>
+
+
+        </div>
+
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-section-left">
+                <h1 class="heading">Hello!! I'm Aquib Jawed,</h1>
+                <h2 class="sub-heading">Web <br> Developer</h2>
+                <p class="intro">I'm Aquib Jawed, a web developer skilled in front-end and
+                    back-end development, proficient in JavaScript, with
+                    strong knowledge of data structures and algorithms.
+                </p>
+                <button id="hire-btn">Hire me <i class="ri-arrow-right-up-fill"></i></button>
+            </div>
+            <div class="hero-section-right">
+                <img id="user-image" src="./Media/UserImage.png" alt="">
+            </div>
+        </section>
+    </main>
+
+
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

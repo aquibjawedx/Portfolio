@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #e3e3e3;
+}
+                                /*  Navbar */
+header {
+    max-width: 75rem;
+    height: 4rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo-container {
+    width: fit-content;
+    font-family: monospace, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+nav {
+    width: fit-content;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.10rem;
+    font-family: Verdana, sans-serif;
+    transition: 0.5s;
+}
+
+.nav-links:hover {
+    color: #3c3c3c;
+}
+
+#menu-btn {
+    border: none;
+    background-color: transparent;
+}
+
+#menu {
+    font-size: 2rem;
+    color: #2f2f2f;
+    display: none;
+}
+
+
+main {
+    width: 75rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+                                /*  Hero Section */
+
+.hero-section {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-section-left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 2rem;
+    gap: 2.5rem;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-family: monospace, sans-serif;
+    font-weight: 100;
+}
+.sub-heading {
+    font-size: 3rem;
+    font-family: monospace, sans-serif;
+    font-weight: 900;
+}
+.intro {
+    font-size: 1rem;
+    font-family:sans-serif;
+    font-weight: 500;
+}
+
+
+#hire-btn {
+    width: 7rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: 1px solid #3a3a3a;
+    border-radius: 0.25rem;
+    transition: 0.5s;
+}
+
+#hire-btn:hover {
+    cursor: pointer;
+    background-color:#d1d1d1;
+}
+
+#hire-btn i {
+    font-size: 1rem;
+}
+
+.hero-section-right {
+    width: 40%;
+    height: 100%;
+    padding: 2.5rem 2rem;
+}
+
+#user-image {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+    border-radius: 50%;
+    filter: saturate(0);
+    transition: 1s;
+}
+
+#user-image:hover {
+    filter: saturate(1);
+    transform: scale(1.05);
+}
+
+                        /*  SideBar */
+
+#sidebar {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 1rem;
+    color: #ffffff;
+    opacity: 0.9;
+    z-index: 1;
+}
+.side {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.side li {
+    list-style: none;
+    text-align: center;
+}
+
+
+#back-btn {
+    margin-right: -20rem;
+    margin-top: -4rem;
+    gap: 40rem;
+    background-color: transparent;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+}
+
+#back-btn i {
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 2rem;
+}
+
+.side-menu-links {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
+                            /* Responsive */
+
+@media (max-width:700px) {
+    header {
+        background-color: #d1d1d1;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .logo-container {
+        font-size: 1.5rem;
+    }
+
+    #navbar ul li{
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+
+
+    main {
+        margin: 0;
+    }
+    .hero-section {
+        flex-direction: column;
+    }
+    .hero-section-left {
+        width: 100vw;
+        align-items: center;
+        padding: 5rem 1rem;
+        text-align: center;
+    }
+    .hero-section-right {
+        width: 100vw;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid #000000;
+    }
+    #user-image {
+        width: 15rem;
+        height: 15rem;
+    }
+}
