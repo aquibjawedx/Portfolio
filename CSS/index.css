@@ -9,6 +9,7 @@ html, body {
     overflow-x: hidden;
     overflow-y: auto;
     background-color: #e3e3e3;
+    scroll-behavior: smooth;
 }
                                 /*  Navbar */
 header {
@@ -105,6 +106,7 @@ main {
     font-size: 1rem;
     font-family:sans-serif;
     font-weight: 500;
+    line-height: 1.4rem;
 }
 
 
@@ -115,6 +117,11 @@ main {
     border: 1px solid #3a3a3a;
     border-radius: 0.25rem;
     transition: 0.5s;
+}
+
+#hire-btn a {
+    text-decoration: none;
+    color: #000000;
 }
 
 #hire-btn:hover {
@@ -145,6 +152,49 @@ main {
     filter: saturate(1);
     transform: scale(1.05);
 }
+
+                            /*  Footer  */
+footer {
+    margin: 1rem auto;
+    margin-bottom: 0;
+    height: 20%;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.social {
+    display: flex;
+    gap: 2rem;
+}
+
+.social-links {
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.social-links:hover {
+    cursor: pointer;
+    color:#d1d1d1;
+}
+
+.copyright p {
+    font-family: monospace, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: #dadada;
+}
+
+
+
+
+
 
                         /*  SideBar */
 
@@ -248,5 +298,13 @@ main {
     #user-image {
         width: 10rem;
         height: 10rem;
+    }
+
+    .social-links i {
+        font-size: 1.75rem;
+    }
+
+    .copyright p {
+        font-size: 0.75rem;
     }
 }
