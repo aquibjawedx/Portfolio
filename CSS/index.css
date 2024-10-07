@@ -109,28 +109,48 @@ main {
     line-height: 1.4rem;
 }
 
+                                /*  HIRE BUTTON Animation  */
 
 #hire-btn {
     width: 7rem;
     height: 2.5rem;
+}
+
+#hire-btn button {
+    width: 100%;
+    height: 100%;
     font-size: 1rem;
-    border: 1px solid #3a3a3a;
+    font-family: Verdana ,serif;
+    border: 1px solid #1e1e1e;
     border-radius: 0.25rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #1e1e1e;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+#hire-btn button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1e1e1e;
+    z-index: -1;
+    border-radius: 3px;
     transition: 0.5s;
 }
 
-#hire-btn a {
-    text-decoration: none;
-    color: #000000;
+#hire-btn button:hover::before{
+    width: 100%;
 }
 
-#hire-btn:hover {
-    cursor: pointer;
-    background-color:#d1d1d1;
-}
-
-#hire-btn i {
-    font-size: 1rem;
+#hire-btn button:hover {
+    color: #ffffff;
 }
 
 .hero-section-right {
